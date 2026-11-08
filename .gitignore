@@ -1,0 +1,13 @@
+node_modules/
+.vitepress/cache/
+.vitepress/dist/
+.taste-skill/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# 로컬 화면 검증 결과
+.playwright-cli/
+output/

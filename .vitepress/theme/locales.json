@@ -1,0 +1,266 @@
+{
+  "en": {
+    "label": "English",
+    "lang": "en",
+    "home": "Home",
+    "docs": "Technical docs",
+    "map": "Sitemap",
+    "intro": "Documentation overview",
+    "arch": "Architecture and providers",
+    "sec": "Security and data",
+    "ops": "Operations and recovery",
+    "product": "Product",
+    "faq": "FAQ",
+    "spine": "Spine docs",
+    "hero": "Your Spine app’s next destination.",
+    "desc": "Deploy Spine apps written in Go from your CLI and manage them on the web.",
+    "action": "Explore deployment",
+    "status": "Spine Cloud open beta",
+    "flow": "From your project to a public address",
+    "steps": [
+      "Connect your account",
+      "Deploy from the terminal",
+      "Find your app’s address"
+    ],
+    "details": [
+      "Approve a one-time code in your browser. Your CLI never needs your password.",
+      "Select an app, request a deployment, and follow its progress.",
+      "Find the public address for a successful deployment in your dashboard."
+    ],
+    "features": "Beyond deployment",
+    "featuretext": "Review app deployment history and public addresses, connect your CLI, and manage environment variables. The screens below are illustrative.",
+    "trust": "How it works, in the open",
+    "trusttext": "Explore the architecture, security boundaries, operational choices, and the limits of what has been verified.",
+    "doccta": "Read technical docs",
+    "fqs": [
+      [
+        "What does the open beta offer?",
+        "Deployment from the CLI and dashboard access are being prepared. The beta scope and terms will be announced at launch."
+      ],
+      [
+        "Which apps can I deploy?",
+        "Spine apps written in Go. This demonstration shows the Preview development CLI workflow."
+      ],
+      [
+        "Does running the command deploy immediately?",
+        "This page is a demonstration. Actual deployment requires a supported CLI, an approved account, and an eligible deployment target."
+      ],
+      [
+        "What are the pricing and terms?",
+        "Open beta pricing and terms will be announced once decided."
+      ],
+      [
+        "Is Spine a paid service?",
+        "The Spine framework is available under the MIT license. Spine Cloud is a separate deployment and operations service."
+      ]
+    ],
+    "featureNames": [
+      "Apps and deployment history",
+      "Connect in the browser",
+      "Keep configuration separate"
+    ],
+    "featureDetails": [
+      "Review app status, deployment history, and the public address of successful deployments.",
+      "Approve a one-time code to connect your account. Web and CLI sessions are issued separately.",
+      "Manage app environment variables. Saved values cannot be retrieved."
+    ]
+  },
+  "ja": {
+    "label": "日本語",
+    "lang": "ja",
+    "home": "ホーム",
+    "docs": "技術文書",
+    "map": "サイトマップ",
+    "intro": "技術文書の概要",
+    "arch": "アーキテクチャと提供事業者",
+    "sec": "セキュリティとデータ",
+    "ops": "運用と復旧",
+    "product": "製品紹介",
+    "faq": "よくある質問",
+    "spine": "Spineドキュメント",
+    "hero": "Spineアプリの次の場所へ。",
+    "desc": "Goで書いたSpineアプリをCLIからデプロイし、Webで管理します。",
+    "action": "デプロイの流れ",
+    "status": "Spine Cloud オープンベータ",
+    "flow": "プロジェクトから公開アドレスまで",
+    "steps": [
+      "アカウントを連携",
+      "ターミナルからデプロイ",
+      "アプリのアドレスを確認"
+    ],
+    "details": [
+      "ブラウザでワンタイムコードを承認します。CLIにパスワードを入力する必要はありません。",
+      "アプリを選択し、デプロイを依頼して進行状況を確認します。",
+      "成功したデプロイの公開アドレスをダッシュボードで確認します。"
+    ],
+    "features": "デプロイ後の管理",
+    "featuretext": "デプロイ履歴と公開アドレスを確認し、CLIの連携や環境変数の管理ができます。画面は説明用の例です。",
+    "trust": "運用の仕組みを公開",
+    "trusttext": "アーキテクチャ、セキュリティ境界、運用上の選択と検証範囲を説明します。",
+    "doccta": "技術文書を見る",
+    "fqs": [
+      [
+        "オープンベータで何ができますか？",
+        "CLIからのデプロイとダッシュボードを準備しています。利用範囲と条件は開始時にお知らせします。"
+      ],
+      [
+        "どのアプリをデプロイできますか？",
+        "Goで書いたSpineアプリが対象です。この例はPreview開発CLIの流れを示します。"
+      ],
+      [
+        "コマンドを実行するとすぐにデプロイされますか？",
+        "この画面は説明用です。実際のデプロイには対応CLI、承認されたアカウント、対象アプリが必要です。"
+      ],
+      [
+        "料金と利用条件は？",
+        "オープンベータの料金と条件は決まり次第お知らせします。"
+      ],
+      [
+        "Spineは有料ですか？",
+        "SpineフレームワークはMITライセンスで公開されています。Spine Cloudは別のサービスです。"
+      ]
+    ],
+    "featureNames": [
+      "アプリとデプロイ履歴",
+      "ブラウザでアカウント連携",
+      "設定をコードから分離"
+    ],
+    "featureDetails": [
+      "アプリの状態、デプロイ履歴、成功した公開アドレスを確認します。",
+      "ワンタイムコードを承認します。WebとCLIのセッションは別々に発行されます。",
+      "アプリの環境変数を管理します。保存した値は再表示されません。"
+    ]
+  },
+  "zh-Hans": {
+    "label": "简体中文",
+    "lang": "zh-CN",
+    "home": "首页",
+    "docs": "技术文档",
+    "map": "网站地图",
+    "intro": "技术文档概览",
+    "arch": "架构与服务提供商",
+    "sec": "安全与数据",
+    "ops": "运维与恢复",
+    "product": "产品介绍",
+    "faq": "常见问题",
+    "spine": "Spine 文档",
+    "hero": "Spine 应用的下一站。",
+    "desc": "通过 CLI 部署使用 Go 编写的 Spine 应用，并在网页中管理。",
+    "action": "了解部署流程",
+    "status": "Spine Cloud 公开测试",
+    "flow": "从项目到公开地址",
+    "steps": [
+      "连接账户",
+      "从终端部署",
+      "查看应用地址"
+    ],
+    "details": [
+      "在浏览器中批准一次性代码，无需向 CLI 输入密码。",
+      "选择应用，发起部署并查看进度。",
+      "在控制台查看成功部署的公开地址。"
+    ],
+    "features": "部署之后",
+    "featuretext": "查看部署历史和公开地址，连接 CLI 并管理环境变量。以下界面仅为示例。",
+    "trust": "公开运作方式",
+    "trusttext": "了解架构、安全边界、运维选择以及已验证范围的限制。",
+    "doccta": "阅读技术文档",
+    "fqs": [
+      [
+        "公开测试提供什么？",
+        "我们正在准备 CLI 部署和控制台。使用范围和条件将在公开测试开始时说明。"
+      ],
+      [
+        "可以部署哪些应用？",
+        "目标是使用 Go 编写的 Spine 应用。此演示展示 Preview 开发版 CLI 的流程。"
+      ],
+      [
+        "运行命令后会立即部署吗？",
+        "此页面仅为演示。实际部署需要受支持的 CLI、获批准的账户和符合条件的部署目标。"
+      ],
+      [
+        "价格和使用条件是什么？",
+        "公开测试的价格和条件确定后公布。"
+      ],
+      [
+        "Spine 是收费服务吗？",
+        "Spine 框架以 MIT 许可证开源。Spine Cloud 是独立的部署和运维服务。"
+      ]
+    ],
+    "featureNames": [
+      "应用与部署历史",
+      "在浏览器中连接账户",
+      "配置与代码分离"
+    ],
+    "featureDetails": [
+      "查看应用状态、部署历史和成功部署的公开地址。",
+      "批准一次性代码。网页和 CLI 会话分别签发。",
+      "管理应用环境变量。已保存的值不能再次查看。"
+    ]
+  },
+  "zh-Hant": {
+    "label": "繁體中文",
+    "lang": "zh-TW",
+    "home": "首頁",
+    "docs": "技術文件",
+    "map": "網站地圖",
+    "intro": "技術文件概覽",
+    "arch": "架構與服務供應商",
+    "sec": "安全與資料",
+    "ops": "維運與復原",
+    "product": "產品介紹",
+    "faq": "常見問題",
+    "spine": "Spine 文件",
+    "hero": "Spine 應用程式的下一站。",
+    "desc": "透過 CLI 部署以 Go 撰寫的 Spine 應用程式，並在網頁中管理。",
+    "action": "了解部署流程",
+    "status": "Spine Cloud 公開測試",
+    "flow": "從專案到公開網址",
+    "steps": [
+      "連結帳戶",
+      "從終端機部署",
+      "查看應用程式網址"
+    ],
+    "details": [
+      "在瀏覽器核准一次性代碼，不需要向 CLI 輸入密碼。",
+      "選擇應用程式，提出部署請求並查看進度。",
+      "在控制台查看成功部署的公開網址。"
+    ],
+    "features": "部署之後",
+    "featuretext": "查看部署歷程與公開網址，連結 CLI 並管理環境變數。以下畫面僅為範例。",
+    "trust": "公開運作方式",
+    "trusttext": "了解架構、安全邊界、維運選擇以及已驗證範圍的限制。",
+    "doccta": "閱讀技術文件",
+    "fqs": [
+      [
+        "公開測試提供什麼？",
+        "我們正準備 CLI 部署與控制台。使用範圍和條件會在公開測試開始時說明。"
+      ],
+      [
+        "可以部署哪些應用程式？",
+        "目標是以 Go 撰寫的 Spine 應用程式。此示範呈現 Preview 開發版 CLI 的流程。"
+      ],
+      [
+        "執行命令後會立即部署嗎？",
+        "此頁面僅供示範。實際部署需要受支援的 CLI、獲核准的帳戶和符合條件的部署目標。"
+      ],
+      [
+        "價格和使用條件是什麼？",
+        "公開測試的價格和條件確定後公布。"
+      ],
+      [
+        "Spine 是付費服務嗎？",
+        "Spine 框架以 MIT 授權開源。Spine Cloud 是獨立的部署與維運服務。"
+      ]
+    ],
+    "featureNames": [
+      "應用程式與部署歷程",
+      "在瀏覽器中連結帳戶",
+      "設定與程式碼分離"
+    ],
+    "featureDetails": [
+      "查看應用程式狀態、部署歷程和成功部署的公開網址。",
+      "核准一次性代碼。網頁和 CLI 工作階段分別簽發。",
+      "管理應用程式環境變數。已儲存的值無法再次查看。"
+    ]
+  }
+}
