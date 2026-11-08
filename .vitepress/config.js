@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import messages from './theme/locales.json' with { type: 'json' }
 
-const ko = { label: '한국어', lang: 'ko-KR', home: '홈', docs: '기술 문서', map: '사이트맵', intro: '기술 문서 소개', arch: '아키텍처와 제공자', sec: '보안과 데이터', ops: '운영과 복구' }
+const ko = { label: '한국어', lang: 'ko-KR', home: '홈', docs: '기술 문서', map: '사이트맵', intro: '기술 문서 소개', arch: '아키텍처와 제공자', sec: '보안과 데이터', ops: '운영과 복구', dashboard: '대시보드' }
 const ui = { '/': ['언어 선택', '이 페이지에서', '이전 문서', '다음 문서'], '/en/': ['Languages', 'On this page', 'Previous page', 'Next page'], '/ja/': ['言語', 'このページ', '前のページ', '次のページ'], '/zh-Hans/': ['选择语言', '本页内容', '上一页', '下一页'], '/zh-Hant/': ['選擇語言', '本頁內容', '上一頁', '下一頁'] }
 function localeConfig(m, base) {
   const [language, outline, prev, next] = ui[base]
@@ -16,7 +16,7 @@ function localeConfig(m, base) {
       skipToContentLabel: skip,
       outline: { label: outline },
       docFooter: { prev, next },
-      nav: [{ text: m.home, link: base }, { text: m.docs, link: `${base}technical/` }, { text: m.map, link: `${base}sitemap` }],
+      nav: [{ text: m.home, link: base }, { text: m.docs, link: `${base}technical/` }, { text: m.map, link: `${base}sitemap` }, { text: m.dashboard, link: 'https://spinecloud.dev/' }],
       sidebar: { [`${base}technical/`]: [{ text: m.docs, items: [
         { text: m.intro, link: `${base}technical/` },
         { text: m.arch, link: `${base}technical/architecture` },

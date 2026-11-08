@@ -32,15 +32,15 @@ onUnmounted(() => observer?.disconnect())
   <header class="site-header frame">
     <a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a>
     <nav aria-label="주 메뉴"><a href="/#workflow">제품 소개</a><a href="/technical/">기술 문서</a><a href="/#faq">FAQ</a></nav>
-    <select class="locale-switch" aria-label="언어 선택" value="ko" @change="changeLocale"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select>
+    <div class="header-controls"><a class="dashboard-link" href="https://spinecloud.dev/">대시보드</a><select class="locale-switch" aria-label="언어 선택" value="ko" @change="changeLocale"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select></div>
   </header>
-  <main v-if="page.isNotFound" id="main" class="not-found frame"><h1>페이지를 찾을 수 없습니다</h1><a class="button" href="/">홈으로 돌아가기</a></main>
+  <main v-if="page.isNotFound" id="main" class="not-found frame"><h1>페이지를 찾을 수 없습니다</h1><a class="home-button" href="/">홈으로 돌아가기</a></main>
   <main v-else id="main">
     <section class="hero frame" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title" data-reveal>Spine 앱의<br> 다음 목적지.</h1>
+        <h1 id="hero-title" data-reveal>그냥 미쳤습니다</h1>
         <p class="hero-description" data-reveal>Spine Cloud는 Go로 만든 Spine 앱을<br class="desktop-break"> CLI에서 배포하고, 웹에서 관리하는 클라우드입니다.</p>
-        <div class="hero-actions" data-reveal><a class="button" href="#workflow">배포 흐름 보기 <span aria-hidden="true">↗</span></a><a class="text-link" href="/technical/">기술 문서 보기</a></div>
+        <div class="hero-actions" data-reveal><a class="home-button" href="#workflow">배포 흐름 보기 <span aria-hidden="true">↗</span></a><a class="text-link" href="/technical/">믿지 못하시겠다고요? 기술문서 확인하기</a></div>
         <p class="pilot-note" data-reveal>Spine Cloud 오픈 베타</p>
       </div>
       <div class="hero-product reveal-image" data-reveal><DeployDemo /></div>
@@ -76,7 +76,7 @@ onUnmounted(() => observer?.disconnect())
     <section id="pilot" class="pilot-section" aria-labelledby="pilot-title"><div class="frame pilot-inner"><div><h2 id="pilot-title" data-reveal>어떻게 운영하는지<br> 문서로 공개합니다.</h2><a class="text-link" href="/technical/" data-reveal>기술 문서 보기</a></div><div class="pilot-details"><p data-reveal>아키텍처부터 보안과 복구까지,<br> 선택한 방식과 그 한계를 설명합니다.</p><p data-reveal>검증된 결과와 아직 확인이 필요한 항목을 구분해 기록합니다. 운영 구성이 바뀌면 문서도 함께 갱신합니다.</p><dl data-reveal><div><dt>아키텍처</dt><dd>구성 요소와 배포 흐름</dd></div><div><dt>신뢰와 보안</dt><dd>보호 범위와 남은 과제</dd></div></dl></div></div></section>
 
     <section id="faq" class="faq frame" aria-labelledby="faq-title"><h2 id="faq-title" data-reveal>자주 묻는 질문</h2><div class="faq-list"><details v-for="(question, i) in questions" :key="question[0]" :open="i === 0" data-reveal><summary>{{ question[0] }}<span aria-hidden="true">+</span></summary><p>{{ question[1] }}</p></details></div></section>
-    <section class="closing frame" aria-labelledby="closing-title"><div><h2 id="closing-title" data-reveal>다음 앱은 Spine으로.</h2><p data-reveal>프로젝트를 만들고 API를 작성하는 방법부터 살펴보세요.</p></div><a class="button" href="https://spine.na2ru2.me/ko/" data-reveal>Spine 문서 보기 <span aria-hidden="true">↗</span></a></section>
+    <section class="closing frame" aria-labelledby="closing-title"><div><h2 id="closing-title" data-reveal>다음 앱은 Spine으로.</h2><p data-reveal>프로젝트를 만들고 API를 작성하는 방법부터 살펴보세요.</p></div><a class="home-button" href="https://spine.na2ru2.me/ko/" data-reveal>Spine 문서 보기 <span aria-hidden="true">↗</span></a></section>
   </main>
   <footer class="site-footer frame"><a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a><div><a href="https://spine.na2ru2.me/ko/">Spine</a><a href="https://github.com/NARUBROWN/spine">GitHub</a><a href="/technical/">기술 문서</a><a href="/sitemap">사이트맵</a></div><span>© {{ new Date().getFullYear() }} Spine Cloud</span></footer>
 </template>

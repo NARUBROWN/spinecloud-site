@@ -12,7 +12,7 @@
     "product": "Product",
     "faq": "FAQ",
     "spine": "Spine docs",
-    "hero": "Your Spine app’s next destination.",
+    "hero": "Absolutely insane",
     "desc": "Deploy Spine apps written in Go from your CLI and manage them on the web.",
     "action": "Explore deployment",
     "status": "Spine Cloud open beta",
@@ -63,7 +63,9 @@
       "Review app status, deployment history, and the public address of successful deployments.",
       "Approve a one-time code to connect your account. Web and CLI sessions are issued separately.",
       "Manage app environment variables. Saved values cannot be retrieved."
-    ]
+    ],
+    "closing": "Your Spine app’s next destination.",
+    "dashboard": "Dashboard"
   },
   "ja": {
     "label": "日本語",
@@ -78,7 +80,7 @@
     "product": "製品紹介",
     "faq": "よくある質問",
     "spine": "Spineドキュメント",
-    "hero": "Spineアプリの次の場所へ。",
+    "hero": "マジでやばい",
     "desc": "Goで書いたSpineアプリをCLIからデプロイし、Webで管理します。",
     "action": "デプロイの流れ",
     "status": "Spine Cloud オープンベータ",
@@ -129,7 +131,9 @@
       "アプリの状態、デプロイ履歴、成功した公開アドレスを確認します。",
       "ワンタイムコードを承認します。WebとCLIのセッションは別々に発行されます。",
       "アプリの環境変数を管理します。保存した値は再表示されません。"
-    ]
+    ],
+    "closing": "Spineアプリの次の場所へ。",
+    "dashboard": "管理画面"
   },
   "zh-Hans": {
     "label": "简体中文",
@@ -144,7 +148,7 @@
     "product": "产品介绍",
     "faq": "常见问题",
     "spine": "Spine 文档",
-    "hero": "Spine 应用的下一站。",
+    "hero": "简直绝了",
     "desc": "通过 CLI 部署使用 Go 编写的 Spine 应用，并在网页中管理。",
     "action": "了解部署流程",
     "status": "Spine Cloud 公开测试",
@@ -195,7 +199,9 @@
       "查看应用状态、部署历史和成功部署的公开地址。",
       "批准一次性代码。网页和 CLI 会话分别签发。",
       "管理应用环境变量。已保存的值不能再次查看。"
-    ]
+    ],
+    "closing": "Spine 应用的下一站。",
+    "dashboard": "控制台"
   },
   "zh-Hant": {
     "label": "繁體中文",
@@ -210,7 +216,7 @@
     "product": "產品介紹",
     "faq": "常見問題",
     "spine": "Spine 文件",
-    "hero": "Spine 應用程式的下一站。",
+    "hero": "簡直絕了",
     "desc": "透過 CLI 部署以 Go 撰寫的 Spine 應用程式，並在網頁中管理。",
     "action": "了解部署流程",
     "status": "Spine Cloud 公開測試",
@@ -261,6 +267,8 @@
       "查看應用程式狀態、部署歷程和成功部署的公開網址。",
       "核准一次性代碼。網頁和 CLI 工作階段分別簽發。",
       "管理應用程式環境變數。已儲存的值無法再次查看。"
-    ]
+    ],
+    "closing": "Spine 應用程式的下一站。",
+    "dashboard": "控制台"
   }
 }
