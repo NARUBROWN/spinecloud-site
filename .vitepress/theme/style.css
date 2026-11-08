@@ -160,7 +160,7 @@ p.secondary-note { font-size: var(--small); color: var(--muted); margin-top: 18p
 .faq-list details[open] summary span { transform: rotate(45deg); }
 .faq-list details p { padding: 0 24px 26px; font-size: 16px; }
 .faq-list summary:hover { color: var(--accent); }
-.closing { display: flex; align-items: center; justify-content: space-between; gap: 60px; background: var(--surface); padding: 64px 56px; border-radius: var(--radius); }
+.closing { display: flex; align-items: center; justify-content: space-between; gap: 60px; margin-top: 112px; background: var(--surface); padding: 64px 56px; border-radius: var(--radius); }
 .closing h2 { font-size: 36px; }
 .closing p { margin-top: 20px; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding-block: 66px; font-size: var(--small); }
@@ -270,7 +270,7 @@ p.secondary-note { font-size: var(--small); color: var(--muted); margin-top: 18p
   .faq { padding-block: 80px; gap: 30px; }
   .faq-list summary { padding: 22px 20px; }
   .faq-list details p { padding: 0 20px 22px; }
-  .closing { display: block; padding: 32px 24px; }
+  .closing { display: block; margin-top: 56px; padding: 32px 24px; }
   .closing h2 { font-size: 24px; }
   .closing p { margin-top: 18px; }
   .closing .home-button { margin-top: 28px; }
