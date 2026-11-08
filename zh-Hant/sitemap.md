@@ -7,7 +7,7 @@ title: 網站地圖
 ## 產品介紹
 
 - [首頁](/zh-Hant/)
-- [常見問題](/zh-Hant/#faq)
+- [常見問題](/zh-Hant/faq)
 
 ## 技術文件
 

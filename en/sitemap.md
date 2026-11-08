@@ -7,7 +7,7 @@ title: Sitemap
 ## Product
 
 - [Home](/en/)
-- [FAQ](/en/#faq)
+- [FAQ](/en/faq)
 
 ## Technical docs
 

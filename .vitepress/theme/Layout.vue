@@ -4,16 +4,10 @@ import { useData } from 'vitepress'
 import BrandMark from './components/BrandMark.vue'
 import DeployDemo from './components/DeployDemo.vue'
 const { page } = useData()
-const questions = [
-  ['오픈 베타에서는 무엇을 할 수 있나요?', 'Spine 앱을 CLI로 배포하고 대시보드에서 배포 결과를 확인하는 경험을 준비하고 있습니다. 이용 범위와 조건은 오픈 베타 시작에 맞춰 안내합니다.'],
-  ['어떤 앱을 배포하나요?', 'Go로 작성한 Spine 앱을 대상으로 합니다. 이 페이지의 배포 시연은 Preview 기반 개발 CLI의 흐름을 보여줍니다.'],
-  ['명령어를 실행하면 바로 배포되나요?', '이 페이지는 설명용 시연입니다. 실제 배포에는 지원 CLI, 승인된 계정과 배포 대상이 필요합니다.'],
-  ['요금과 이용 조건은 어떻게 되나요?', '오픈 베타의 요금과 이용 조건은 확정 후 안내합니다.'],
-  ['Spine도 유료 서비스인가요?', 'Spine 프레임워크는 MIT 라이선스로 공개되어 있습니다. Spine Cloud는 앱 배포와 운영을 위한 별도 서비스입니다.']
-]
 function changeLocale(event) { const value = event.target.value; window.location.assign(value === 'ko' ? '/' : `/${value}/`) }
 let observer
 onMounted(() => {
+  if (window.location.hash === '#faq') { window.location.replace('/faq'); return }
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
   observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
@@ -31,7 +25,7 @@ onUnmounted(() => observer?.disconnect())
   <a class="skip-link" href="#main">본문으로 바로가기</a>
   <header class="site-header frame">
     <a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a>
-    <nav aria-label="주 메뉴"><a href="/#workflow">제품 소개</a><a href="/technical/">기술 문서</a><a href="/#faq">FAQ</a></nav>
+    <nav aria-label="주 메뉴"><a href="/#workflow">제품 소개</a><a href="/technical/">기술 문서</a><a href="/faq">FAQ</a></nav>
     <div class="header-controls"><a class="dashboard-link" href="https://spinecloud.dev/">대시보드</a><select class="locale-switch" aria-label="언어 선택" value="ko" @change="changeLocale"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select></div>
   </header>
   <main v-if="page.isNotFound" id="main" class="not-found frame"><h1>페이지를 찾을 수 없습니다</h1><a class="home-button" href="/">홈으로 돌아가기</a></main>
@@ -75,8 +69,7 @@ onUnmounted(() => observer?.disconnect())
 
     <section id="pilot" class="pilot-section" aria-labelledby="pilot-title"><div class="frame pilot-inner"><div><h2 id="pilot-title" data-reveal>어떻게 운영하는지<br> 문서로 공개합니다.</h2><a class="text-link" href="/technical/" data-reveal>기술 문서 보기</a></div><div class="pilot-details"><p data-reveal>아키텍처부터 보안과 복구까지,<br> 선택한 방식과 그 한계를 설명합니다.</p><p data-reveal>검증된 결과와 아직 확인이 필요한 항목을 구분해 기록합니다. 운영 구성이 바뀌면 문서도 함께 갱신합니다.</p><dl data-reveal><div><dt>아키텍처</dt><dd>구성 요소와 배포 흐름</dd></div><div><dt>신뢰와 보안</dt><dd>보호 범위와 남은 과제</dd></div></dl></div></div></section>
 
-    <section id="faq" class="faq frame" aria-labelledby="faq-title"><h2 id="faq-title" data-reveal>자주 묻는 질문</h2><div class="faq-list"><details v-for="(question, i) in questions" :key="question[0]" :open="i === 0" data-reveal><summary>{{ question[0] }}<span aria-hidden="true">+</span></summary><p>{{ question[1] }}</p></details></div></section>
     <section class="closing frame" aria-labelledby="closing-title"><div><h2 id="closing-title" data-reveal>다음 앱은 Spine으로.</h2><p data-reveal>프로젝트를 만들고 API를 작성하는 방법부터 살펴보세요.</p></div><a class="home-button" href="https://spine.na2ru2.me/ko/" data-reveal>Spine 문서 보기 <span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="site-footer frame"><a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a><div><a href="https://spine.na2ru2.me/ko/">Spine</a><a href="https://github.com/NARUBROWN/spine">GitHub</a><a href="/technical/">기술 문서</a><a href="/sitemap">사이트맵</a></div><span>© {{ new Date().getFullYear() }} Spine Cloud</span></footer>
+  <footer class="site-footer frame"><a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a><div><a href="https://spine.na2ru2.me/ko/">Spine</a><a href="https://github.com/NARUBROWN/spine">GitHub</a><a href="/technical/">기술 문서</a><a href="/faq">FAQ</a><a href="/sitemap">사이트맵</a></div><span>© {{ new Date().getFullYear() }} Spine Cloud</span></footer>
 </template>

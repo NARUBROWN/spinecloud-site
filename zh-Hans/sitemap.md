@@ -7,7 +7,7 @@ title: 网站地图
 ## 产品介绍
 
 - [首页](/zh-Hans/)
-- [常见问题](/zh-Hans/#faq)
+- [常见问题](/zh-Hans/faq)
 
 ## 技术文档
 

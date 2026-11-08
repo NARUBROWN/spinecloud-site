@@ -11,3 +11,5 @@ node_modules/
 # 로컬 화면 검증 결과
 .playwright-cli/
 output/
+.vercel
+.env*

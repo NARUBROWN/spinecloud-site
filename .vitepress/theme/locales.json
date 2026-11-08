@@ -32,28 +32,6 @@
     "trust": "How it works, in the open",
     "trusttext": "Explore the architecture, security boundaries, operational choices, and the limits of what has been verified.",
     "doccta": "Read technical docs",
-    "fqs": [
-      [
-        "What does the open beta offer?",
-        "Deployment from the CLI and dashboard access are being prepared. The beta scope and terms will be announced at launch."
-      ],
-      [
-        "Which apps can I deploy?",
-        "Spine apps written in Go. This demonstration shows the Preview development CLI workflow."
-      ],
-      [
-        "Does running the command deploy immediately?",
-        "This page is a demonstration. Actual deployment requires a supported CLI, an approved account, and an eligible deployment target."
-      ],
-      [
-        "What are the pricing and terms?",
-        "Open beta pricing and terms will be announced once decided."
-      ],
-      [
-        "Is Spine a paid service?",
-        "The Spine framework is available under the MIT license. Spine Cloud is a separate deployment and operations service."
-      ]
-    ],
     "featureNames": [
       "Apps and deployment history",
       "Connect in the browser",
@@ -100,28 +78,6 @@
     "trust": "運用の仕組みを公開",
     "trusttext": "アーキテクチャ、セキュリティ境界、運用上の選択と検証範囲を説明します。",
     "doccta": "技術文書を見る",
-    "fqs": [
-      [
-        "オープンベータで何ができますか？",
-        "CLIからのデプロイとダッシュボードを準備しています。利用範囲と条件は開始時にお知らせします。"
-      ],
-      [
-        "どのアプリをデプロイできますか？",
-        "Goで書いたSpineアプリが対象です。この例はPreview開発CLIの流れを示します。"
-      ],
-      [
-        "コマンドを実行するとすぐにデプロイされますか？",
-        "この画面は説明用です。実際のデプロイには対応CLI、承認されたアカウント、対象アプリが必要です。"
-      ],
-      [
-        "料金と利用条件は？",
-        "オープンベータの料金と条件は決まり次第お知らせします。"
-      ],
-      [
-        "Spineは有料ですか？",
-        "SpineフレームワークはMITライセンスで公開されています。Spine Cloudは別のサービスです。"
-      ]
-    ],
     "featureNames": [
       "アプリとデプロイ履歴",
       "ブラウザでアカウント連携",
@@ -168,28 +124,6 @@
     "trust": "公开运作方式",
     "trusttext": "了解架构、安全边界、运维选择以及已验证范围的限制。",
     "doccta": "阅读技术文档",
-    "fqs": [
-      [
-        "公开测试提供什么？",
-        "我们正在准备 CLI 部署和控制台。使用范围和条件将在公开测试开始时说明。"
-      ],
-      [
-        "可以部署哪些应用？",
-        "目标是使用 Go 编写的 Spine 应用。此演示展示 Preview 开发版 CLI 的流程。"
-      ],
-      [
-        "运行命令后会立即部署吗？",
-        "此页面仅为演示。实际部署需要受支持的 CLI、获批准的账户和符合条件的部署目标。"
-      ],
-      [
-        "价格和使用条件是什么？",
-        "公开测试的价格和条件确定后公布。"
-      ],
-      [
-        "Spine 是收费服务吗？",
-        "Spine 框架以 MIT 许可证开源。Spine Cloud 是独立的部署和运维服务。"
-      ]
-    ],
     "featureNames": [
       "应用与部署历史",
       "在浏览器中连接账户",
@@ -236,28 +170,6 @@
     "trust": "公開運作方式",
     "trusttext": "了解架構、安全邊界、維運選擇以及已驗證範圍的限制。",
     "doccta": "閱讀技術文件",
-    "fqs": [
-      [
-        "公開測試提供什麼？",
-        "我們正準備 CLI 部署與控制台。使用範圍和條件會在公開測試開始時說明。"
-      ],
-      [
-        "可以部署哪些應用程式？",
-        "目標是以 Go 撰寫的 Spine 應用程式。此示範呈現 Preview 開發版 CLI 的流程。"
-      ],
-      [
-        "執行命令後會立即部署嗎？",
-        "此頁面僅供示範。實際部署需要受支援的 CLI、獲核准的帳戶和符合條件的部署目標。"
-      ],
-      [
-        "價格和使用條件是什麼？",
-        "公開測試的價格和條件確定後公布。"
-      ],
-      [
-        "Spine 是付費服務嗎？",
-        "Spine 框架以 MIT 授權開源。Spine Cloud 是獨立的部署與維運服務。"
-      ]
-    ],
     "featureNames": [
       "應用程式與部署歷程",
       "在瀏覽器中連結帳戶",
