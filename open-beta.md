@@ -49,7 +49,7 @@ cd cloud-hello
 spine contract check
 ```
 
-Spine Cloud는 앱을 Linux ARM64 실행 파일로 빌드합니다. 현재 CLI 배포는 프런트엔드 자산이 포함된 프로젝트를 지원하지 않습니다.
+`spine deploy`는 Go 앱을 Linux ARM64 실행 파일로 빌드합니다. 앱에서 제공하는 HTML, CSS, JavaScript 같은 정적 파일을 `go:embed`로 내장하면 실행 파일과 함께 배포할 수 있습니다.
 
 ## 5. 배포하고 공개 주소 확인하기
 
