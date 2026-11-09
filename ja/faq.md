@@ -10,6 +10,12 @@ Goで書いたSpineアプリをCLIからデプロイし、Webダッシュボー�
 
 ## どうすれば利用を始められますか？
 
+Spine Cloudはオープンベータです。デプロイにはpreview版CLIが必要です。Goをインストールした環境で次を実行してください。
+
+```bash
+go install github.com/NARUBROWN/spine-cli/cmd/spine@preview
+```
+
 [ダッシュボード](https://spinecloud.dev/)でアカウントを作成し、利用規約を確認してください。CLIで `spine cloud auth login` を実行し、ブラウザでワンタイムコードを承認すると、同じアカウントに連携できます。
 
 ## どのアプリをデプロイできますか？

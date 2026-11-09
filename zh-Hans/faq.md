@@ -10,6 +10,12 @@ Spine Cloud 是一项通过 CLI 部署使用 Go 编写的 Spine 应用并在网�
 
 ## 如何开始使用？
 
+Spine Cloud 正在公开测试。部署需要 preview 版 CLI。请在已安装 Go 的环境中运行：
+
+```bash
+go install github.com/NARUBROWN/spine-cli/cmd/spine@preview
+```
+
 在[控制台](https://spinecloud.dev/)创建账户并阅读服务条款。在 CLI 中运行 `spine cloud auth login`，然后在浏览器中批准一次性代码，即可连接同一账户。
 
 ## 可以部署哪些应用？

@@ -10,6 +10,12 @@ Spine Cloud is a service for deploying Spine apps written in Go from your CLI an
 
 ## How do I get started?
 
+Spine Cloud is in open beta. Deployment requires the preview CLI. Install it with Go:
+
+```bash
+go install github.com/NARUBROWN/spine-cli/cmd/spine@preview
+```
+
 Create an account in the [dashboard](https://spinecloud.dev/) and review the terms of service. Run `spine cloud auth login` in the CLI and approve the one-time code in your browser to connect the same account.
 
 ## Which apps can I deploy?

@@ -35,15 +35,16 @@ onUnmounted(() => observer?.disconnect())
         <h1 id="hero-title" data-reveal>그냥 미쳤습니다</h1>
         <p class="hero-description" data-reveal>Spine Cloud는 Go로 만든 Spine 앱을<br class="desktop-break"> CLI에서 배포하고, 웹에서 관리하는 클라우드입니다.</p>
         <div class="hero-actions" data-reveal><a class="home-button" href="#workflow">배포 흐름 보기 <span aria-hidden="true">↗</span></a><a class="text-link" href="/technical/">믿지 못하시겠다고요? 기술문서 확인하기</a></div>
-        <p class="pilot-note" data-reveal>Spine Cloud 오픈 베타</p>
+        <p class="pilot-note" data-reveal>Spine Cloud 오픈 베타 운영 중. 배포에는 preview CLI가 필요합니다.</p>
       </div>
       <div class="hero-product reveal-image" data-reveal><DeployDemo /></div>
       <div class="hero-baseline" data-reveal><span>Built for Spine. Written in Go.</span><span>로컬 프로젝트에서 공개 주소까지</span></div>
     </section>
 
     <section id="workflow" class="workflow frame" aria-labelledby="workflow-title">
-      <div class="workflow-heading"><h2 id="workflow-title" data-reveal>개발하던<br> 흐름 그대로.</h2><p data-reveal>터미널에서 계정을 연결하고 앱을 배포하세요.<br> 배포가 완료되면 공개 주소에서 앱을 확인합니다.</p><p class="secondary-note" data-reveal>사용 가능한 CLI 버전과 이용 조건은 오픈 베타 안내를 확인해 주세요.</p></div>
+      <div class="workflow-heading"><h2 id="workflow-title" data-reveal>개발하던<br> 흐름 그대로.</h2><p data-reveal>터미널에서 계정을 연결하고 앱을 배포하세요.<br> 배포가 완료되면 공개 주소에서 앱을 확인합니다.</p><p class="secondary-note" data-reveal>오픈 베타 배포는 preview로 설치한 Spine CLI에서 이용할 수 있습니다.</p></div>
       <div class="workflow-list">
+        <div class="workflow-item" data-reveal><h3>preview CLI를 설치하고</h3><p>Go가 설치된 환경에서 실행하세요.</p><pre><code>go install github.com/NARUBROWN/spine-cli/cmd/spine@preview</code></pre></div>
         <div class="workflow-item" data-reveal><h3>계정을 연결하고</h3><p>브라우저에서 일회용 코드를 승인합니다.<br> 비밀번호를 CLI에 입력할 필요가 없습니다.</p><pre><code>spine cloud auth login</code></pre></div>
         <div class="workflow-item" data-reveal><h3>터미널에서 배포하면</h3><p>앱을 선택하고 배포를 요청합니다.<br> 진행 상태도 같은 터미널에서 확인합니다.</p><pre><code>spine deploy</code></pre></div>
         <div class="workflow-item" data-reveal><h3>앱에 주소가 생깁니다</h3><p>성공한 배포의 공개 주소를 확인하세요.<br> 배포 결과는 대시보드에도 남습니다.</p></div>

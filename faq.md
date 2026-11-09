@@ -10,6 +10,12 @@ Spine Cloud는 Go로 작성한 Spine 앱을 CLI에서 배포하고 웹 대시보
 
 ## 어떻게 시작하나요?
 
+Spine Cloud는 오픈 베타이며 배포에는 preview로 설치한 Spine CLI가 필요합니다. Go가 설치된 환경에서 다음 명령을 실행하세요.
+
+```bash
+go install github.com/NARUBROWN/spine-cli/cmd/spine@preview
+```
+
 [대시보드](https://spinecloud.dev/)에서 계정을 만들고 이용약관을 확인하세요. CLI에서는 `spine cloud auth login`을 실행한 뒤 브라우저에서 일회용 코드를 승인해 같은 계정을 연결합니다.
 
 ## 어떤 앱을 배포할 수 있나요?
