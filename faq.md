@@ -16,7 +16,7 @@ Spine Cloud는 오픈 베타이며 배포에는 preview로 설치한 Spine CLI�
 go install github.com/NARUBROWN/spine-cli/cmd/spine@preview
 ```
 
-[대시보드](https://spinecloud.dev/)에서 계정을 만들고 이용약관을 확인하세요. CLI에서는 `spine cloud auth login`을 실행한 뒤 브라우저에서 일회용 코드를 승인해 같은 계정을 연결합니다.
+[대시보드](https://spinecloud.dev/)에서 계정을 만들고 이용약관을 확인하세요. CLI에서는 `spine cloud auth login`을 실행한 뒤 브라우저에서 일회용 코드를 승인해 같은 계정을 연결합니다. 처음 배포한다면 [Spine Cloud 오픈 베타에 참여하는 법](/open-beta)을 따라 하세요.
 
 ## 어떤 앱을 배포할 수 있나요?
 
@@ -24,7 +24,7 @@ Go로 작성한 Spine 앱을 대상으로 합니다. 배포에는 지원되는 C
 
 ## 앱은 어떻게 배포하나요?
 
-계정을 연결한 CLI에서 `spine deploy`를 실행하고 앱을 선택합니다. CLI에서 배포 진행 상태와 결과를 확인할 수 있습니다. 요청이 접수됐다고 해서 배포가 완료된 것은 아닙니다.
+계정을 연결한 뒤 프로젝트 디렉터리에서 `spine deploy`를 실행합니다. CLI에서 배포 진행 상태와 결과를 확인할 수 있습니다. 요청이 접수됐다고 해서 배포가 완료된 것은 아닙니다.
 
 ## 배포한 앱의 주소는 어디서 확인하나요?
 

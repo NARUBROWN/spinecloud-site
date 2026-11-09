@@ -46,7 +46,7 @@ onUnmounted(() => observer?.disconnect())
       <div class="workflow-list">
         <div class="workflow-item" data-reveal><h3>preview CLI를 설치하고</h3><p>Go가 설치된 환경에서 실행하세요.</p><pre><code>go install github.com/NARUBROWN/spine-cli/cmd/spine@preview</code></pre></div>
         <div class="workflow-item" data-reveal><h3>계정을 연결하고</h3><p>브라우저에서 일회용 코드를 승인합니다.<br> 비밀번호를 CLI에 입력할 필요가 없습니다.</p><pre><code>spine cloud auth login</code></pre></div>
-        <div class="workflow-item" data-reveal><h3>터미널에서 배포하면</h3><p>앱을 선택하고 배포를 요청합니다.<br> 진행 상태도 같은 터미널에서 확인합니다.</p><pre><code>spine deploy</code></pre></div>
+        <div class="workflow-item" data-reveal><h3>터미널에서 배포하면</h3><p>프로젝트 디렉터리에서 배포를 요청합니다.<br> 진행 상태도 같은 터미널에서 확인합니다.</p><pre><code>spine deploy</code></pre></div>
         <div class="workflow-item" data-reveal><h3>앱에 주소가 생깁니다</h3><p>성공한 배포의 공개 주소를 확인하세요.<br> 배포 결과는 대시보드에도 남습니다.</p></div>
       </div>
     </section>

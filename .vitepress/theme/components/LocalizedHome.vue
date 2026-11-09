@@ -25,4 +25,12 @@ onMounted(() => { if (window.location.hash === '#faq') window.location.replace(`
     <footer class="site-footer frame"><a class="brand" :href="base"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a><div><a :href="`${base}technical/`">{{ m.docs }}</a><a :href="`${base}faq`">{{ m.faq }}</a><a :href="`${base}sitemap`">{{ m.map }}</a><a :href="`https://spine.na2ru2.me/${locale}/`">{{ m.spine }}</a></div><span>© {{ new Date().getFullYear() }} Spine Cloud</span></footer>
   </div>
 </template>
-<style scoped>.localized-home :is(h1,h2,h3,p) { word-break: normal; overflow-wrap: anywhere; } .localized-home :is(.workflow-heading,.workflow-list,.hero-copy) { min-width: 0; } .localized-features { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; padding-bottom:10px; } .localized-features p { margin-top:16px; } @media(max-width:580px){.localized-features { grid-template-columns:1fr; gap:28px; }.site-header nav{display:none}.hero h1{font-size:clamp(36px,9vw,52px)}} </style>
+<style scoped>.localized-home :is(h1,h2,h3,p) { word-break: normal; overflow-wrap: anywhere; } .localized-home :is(.workflow-heading,.workflow-list,.hero-copy) { min-width: 0; } .localized-features { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; padding-bottom:10px; } .localized-features p { margin-top:16px; } @media(max-width:580px){.localized-features { grid-template-columns:1fr; gap:28px; }.site-header nav{display:none}.hero h1{font-size:clamp(36px,9vw,52px)}}
+@media (max-width: 360px) {
+  .site-header { gap: 8px; }
+  .site-header .brand { font-size: 19px; }
+  .site-header .brand :deep(svg) { width: 20px; }
+  .site-header .dashboard-link { padding-inline: 8px; }
+  .site-header .locale-switch { padding-inline: 7px 25px; background-position: right 6px center; }
+}
+</style>

@@ -24,7 +24,7 @@ Spine Cloud is intended for Spine apps written in Go. Deployment requires a supp
 
 ## How do I deploy an app?
 
-Connect your account, run `spine deploy` in the CLI and select an app. The CLI shows deployment progress and the result. An accepted request does not mean the deployment has completed.
+Connect your account, then run `spine deploy` from your project directory. The CLI shows deployment progress and the result. An accepted request does not mean the deployment has completed.
 
 ## Where can I find my app's address?
 

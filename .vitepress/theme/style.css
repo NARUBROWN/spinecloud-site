@@ -97,14 +97,14 @@ section[id] { scroll-margin-top: 40px; }
 .crossfade-enter-active, .crossfade-leave-active { transition: opacity .22s ease, transform .22s ease; }
 .crossfade-enter-from { opacity: 0; transform: translateY(5px); }
 .crossfade-leave-to { opacity: 0; }
-.workflow { padding-top: 154px; padding-bottom: 150px; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+.workflow { padding-top: 154px; padding-bottom: 150px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 100px; }
 .workflow-heading { align-self: start; position: sticky; top: 60px; }
 .workflow-heading>p { margin-top: 26px; }
 p.secondary-note { font-size: var(--small); color: var(--muted); margin-top: 18px; }
 .workflow-item { padding-bottom: 48px; }
 .workflow-item:last-child { padding-bottom: 0; }
 .workflow-item h3 { margin-bottom: 14px; }
-.workflow-item pre { background: var(--surface); padding: 18px 22px; font-size: 16px; margin-top: 22px; border-radius: var(--radius); overflow-x: auto; }
+.workflow-item pre { background: var(--surface); padding: 18px 22px; font-size: 16px; margin-top: 22px; border-radius: var(--radius); white-space: pre-wrap; overflow-wrap: anywhere; }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 55px; }
 .section-head>p { max-width: 480px; }
 .feature-primary { background: var(--surface); padding: 56px; border-radius: var(--radius); display: grid; grid-template-columns: 4fr 6fr; gap: 70px; align-items: center; }
@@ -238,7 +238,7 @@ p.secondary-note { font-size: var(--small); color: var(--muted); margin-top: 18p
   .hero-baseline { display: block; padding-top: 12px; font-size: 13px; }
   .hero-baseline>span { display: block; }
   .hero-baseline>span+span { margin-top: 8px; }
-  .workflow { grid-template-columns: 1fr; padding-block: 90px; gap: 42px; }
+  .workflow { grid-template-columns: minmax(0, 1fr); padding-block: 90px; gap: 42px; }
   .workflow-heading { position: static; }
   .workflow h2 br { display: none; }
   .workflow-item { padding-bottom: 38px; }
@@ -253,7 +253,7 @@ p.secondary-note { font-size: var(--small); color: var(--muted); margin-top: 18p
   .app-summary strong { font-size: 18px; }
   .status-label { margin-top: 8px; font-size: 12px; }
   .app-address p { font-size: 14px; }
-  .feature-secondary { grid-template-columns: 1fr; gap: 45px; padding-top: 45px; }
+  .feature-secondary { grid-template-columns: minmax(0, 1fr); gap: 45px; padding-top: 45px; }
   .feature-auth { display: flex; flex-direction: column; }
   .feature-auth h3 { order: -2; margin-top: 0; }
   .feature-auth>p { order: -1; }
@@ -298,6 +298,10 @@ p.secondary-note { font-size: var(--small); color: var(--muted); margin-top: 18p
 .header-controls { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .dashboard-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 16px; border-radius: 6px; background: #171717; color: #fff; font-size: 14px; font-weight: 600; white-space: nowrap; }
 .dashboard-link:hover { background: #444; opacity: 1 !important; }
+@media (max-width: 360px) { .site-header.frame { width: calc(100% - 24px); } }
+
+.beta-guide .vp-doc pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.beta-guide .vp-doc pre code { white-space: inherit; }
 @media (max-width: 580px) { .header-controls { gap: 8px; } .dashboard-link { padding: 0 10px; font-size: 12px; } .locale-switch { font-size: 12px; } }
 
 .Layout:has(.docs-header) { --vp-nav-height: 104px; }

@@ -9,7 +9,8 @@ Spine Cloud의 제품 소개와 기술 문서를 살펴보세요.
 ## 제품 소개
 
 - [홈](/): Spine Cloud와 오픈 베타 소개
-- [배포 흐름](/#workflow): 계정 연결부터 배포 결과 확인까지
+- [배포 흐름](/#workflow): CLI 설치부터 배포 결과 확인까지
+- [Spine Cloud 오픈 베타에 참여하는 법](/open-beta): preview CLI 설치와 첫 앱 배포
 - [앱 관리](/#features): 배포 이력과 환경 변수
 - [자주 묻는 질문](/faq): 이용 범위와 요금 안내
 

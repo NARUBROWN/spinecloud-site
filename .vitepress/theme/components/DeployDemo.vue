@@ -5,14 +5,14 @@ const selected = ref(1)
 const copied = ref(false)
 const koreanStages = [
   { title: '계정 연결', command: 'spine cloud auth login', lines: ['브라우저에서 일회용 코드를 승인합니다.', 'CLI와 Spine Cloud 계정을 연결합니다.'], result: '계정 연결' },
-  { title: '앱 배포', command: 'spine deploy', lines: ['배포할 앱을 선택합니다.', '앱을 빌드하고 배포를 요청합니다.', '실행 상태와 연결을 확인합니다.'], result: '배포 완료' },
+  { title: '앱 배포', command: 'spine deploy', lines: ['프로젝트 디렉터리에서 실행합니다.', '앱을 빌드하고 배포를 요청합니다.', '실행 상태와 연결을 확인합니다.'], result: '배포 완료' },
   { title: '주소 확인', command: 'spine deploy', lines: ['성공한 배포의 공개 주소를 확인합니다.', '대시보드에서 배포 이력을 살펴봅니다.'], result: '공개 주소 확인' }
 ]
 const localizedStages = {
-  en: [{title:'Connect',lines:['Approve the one-time code in your browser.','Connect the CLI to your account.'],result:'Account connected'}, {title:'Deploy',lines:['Select an application.','Build and request deployment.','Check the app and connection.'],result:'Deployment complete'}, {title:'Address',lines:['Find the public address of a successful deployment.','Review deployment history in the dashboard.'],result:'Public address'}],
-  ja: [{title:'連携',lines:['ブラウザでワンタイムコードを承認します。','CLIとアカウントを連携します。'],result:'連携完了'}, {title:'デプロイ',lines:['アプリを選択します。','ビルドしてデプロイを依頼します。','実行状態と接続を確認します。'],result:'デプロイ完了'}, {title:'アドレス',lines:['成功したデプロイの公開アドレスを確認します。','ダッシュボードで履歴を確認します。'],result:'公開アドレス'}],
-  'zh-Hans': [{title:'连接账户',lines:['在浏览器批准一次性代码。','连接 CLI 和账户。'],result:'账户已连接'}, {title:'部署应用',lines:['选择应用。','构建并请求部署。','检查运行状态和连接。'],result:'部署完成'}, {title:'查看地址',lines:['查看成功部署的公开地址。','在控制台查看部署历史。'],result:'公开地址'}],
-  'zh-Hant': [{title:'連結帳戶',lines:['在瀏覽器核准一次性代碼。','連結 CLI 和帳戶。'],result:'帳戶已連結'}, {title:'部署應用',lines:['選擇應用程式。','建置並提出部署請求。','檢查執行狀態和連線。'],result:'部署完成'}, {title:'查看網址',lines:['查看成功部署的公開網址。','在控制台查看部署歷程。'],result:'公開網址'}]
+  en: [{title:'Connect',lines:['Approve the one-time code in your browser.','Connect the CLI to your account.'],result:'Account connected'}, {title:'Deploy',lines:['Run from your project directory.','Build and request deployment.','Check the app and connection.'],result:'Deployment complete'}, {title:'Address',lines:['Find the public address of a successful deployment.','Review deployment history in the dashboard.'],result:'Public address'}],
+  ja: [{title:'連携',lines:['ブラウザでワンタイムコードを承認します。','CLIとアカウントを連携します。'],result:'連携完了'}, {title:'デプロイ',lines:['プロジェクトディレクトリから実行します。','ビルドしてデプロイを依頼します。','実行状態と接続を確認します。'],result:'デプロイ完了'}, {title:'アドレス',lines:['成功したデプロイの公開アドレスを確認します。','ダッシュボードで履歴を確認します。'],result:'公開アドレス'}],
+  'zh-Hans': [{title:'连接账户',lines:['在浏览器批准一次性代码。','连接 CLI 和账户。'],result:'账户已连接'}, {title:'部署应用',lines:['在项目目录中运行。','构建并请求部署。','检查运行状态和连接。'],result:'部署完成'}, {title:'查看地址',lines:['查看成功部署的公开地址。','在控制台查看部署历史。'],result:'公开地址'}],
+  'zh-Hant': [{title:'連結帳戶',lines:['在瀏覽器核准一次性代碼。','連結 CLI 和帳戶。'],result:'帳戶已連結'}, {title:'部署應用',lines:['在專案目錄中執行。','建置並提出部署請求。','檢查執行狀態和連線。'],result:'部署完成'}, {title:'查看網址',lines:['查看成功部署的公開網址。','在控制台查看部署歷程。'],result:'公開網址'}]
 }
 const demoText = { ko:['배포 흐름 시연','명령어 복사','명령어 복사 완료','복사','복사됨','배포 과정','설명용 예시이며 실제 배포를 실행하지 않습니다.'], en:['Deployment demo','Copy command','Command copied','Copy','Copied','Deployment stages','Illustration only. This does not deploy an app.'], ja:['デプロイのデモ','コマンドをコピー','コピーしました','コピー','コピー済み','デプロイの流れ','説明用の例です。実際のデプロイは行いません。'], 'zh-Hans':['部署演示','复制命令','命令已复制','复制','已复制','部署流程','仅供演示，不会实际部署应用。'], 'zh-Hant':['部署示範','複製命令','命令已複製','複製','已複製','部署流程','僅供示範，不會實際部署應用程式。'] }
 const text = computed(() => demoText[props.locale] || demoText.ko)

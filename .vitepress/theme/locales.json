@@ -26,7 +26,7 @@
     "details": [
       "Run this command with Go installed.",
       "Approve a one-time code in your browser. Your CLI never needs your password.",
-      "Select an app, request a deployment, and follow its progress.",
+      "Deploy from your project directory and follow its progress.",
       "Find the public address for a successful deployment in your dashboard."
     ],
     "features": "Beyond deployment",
@@ -74,7 +74,7 @@
     "details": [
       "Goをインストールした環境で実行します。",
       "ブラウザでワンタイムコードを承認します。CLIにパスワードを入力する必要はありません。",
-      "アプリを選択し、デプロイを依頼して進行状況を確認します。",
+      "プロジェクトディレクトリからデプロイし、進行状況を確認します。",
       "成功したデプロイの公開アドレスをダッシュボードで確認します。"
     ],
     "features": "デプロイ後の管理",
@@ -122,7 +122,7 @@
     "details": [
       "在已安装 Go 的环境中运行此命令。",
       "在浏览器中批准一次性代码，无需向 CLI 输入密码。",
-      "选择应用，发起部署并查看进度。",
+      "在项目目录中发起部署并查看进度。",
       "在控制台查看成功部署的公开地址。"
     ],
     "features": "部署之后",
@@ -170,7 +170,7 @@
     "details": [
       "在已安裝 Go 的環境中執行此指令。",
       "在瀏覽器核准一次性代碼，不需要向 CLI 輸入密碼。",
-      "選擇應用程式，提出部署請求並查看進度。",
+      "在專案目錄中提出部署請求並查看進度。",
       "在控制台查看成功部署的公開網址。"
     ],
     "features": "部署之後",
