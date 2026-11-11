@@ -28,11 +28,12 @@ function localeConfig(m, base) {
 }
 export default defineConfig({
   lang: 'ko-KR',
+  appearance: 'force-dark',
   title: 'Spine Cloud',
   description: 'Spine 애플리케이션을 위한 관리형 배포 서비스',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }]
+    ['meta', { name: 'theme-color', content: '#171719' }]
   ],
   cleanUrls: true,
   srcExclude: ['README.md', 'output/**'],

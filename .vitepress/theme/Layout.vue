@@ -1,7 +1,11 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue'
 import { useData } from 'vitepress'
-import BrandMark from './components/BrandMark.vue'
+import BrandLogo from './components/BrandLogo.vue'
+import ProductDemo from './components/ProductDemo.vue'
+import DocsIcon from './components/DocsIcon.vue'
+import WorkflowIcon from './components/WorkflowIcon.vue'
+import FeaturesIcon from './components/FeaturesIcon.vue'
 import DeployDemo from './components/DeployDemo.vue'
 const { page } = useData()
 function changeLocale(event) { const value = event.target.value; window.location.assign(value === 'ko' ? '/' : `/${value}/`) }
@@ -24,7 +28,7 @@ onUnmounted(() => observer?.disconnect())
 <template>
   <a class="skip-link" href="#main">본문으로 바로가기</a>
   <header class="site-header frame">
-    <a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a>
+    <a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandLogo /></a>
     <nav aria-label="주 메뉴"><a href="/#workflow">제품 소개</a><a href="/technical/">기술 문서</a><a href="/faq">FAQ</a></nav>
     <div class="header-controls"><a class="dashboard-link" href="https://spinecloud.dev/">대시보드</a><select class="locale-switch" aria-label="언어 선택" value="ko" @change="changeLocale"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select></div>
   </header>
@@ -38,11 +42,11 @@ onUnmounted(() => observer?.disconnect())
         <p class="pilot-note" data-reveal>Spine Cloud 오픈 베타 운영 중. 배포에는 preview CLI가 필요합니다.</p>
       </div>
       <div class="hero-product reveal-image" data-reveal><DeployDemo /></div>
-      <div class="hero-baseline" data-reveal><span>Built for Spine. Written in Go.</span><span>로컬 프로젝트에서 공개 주소까지</span></div>
+      <div class="hero-baseline" data-reveal><span>로컬 프로젝트에서 공개 주소까지</span></div>
     </section>
 
     <section id="workflow" class="workflow frame" aria-labelledby="workflow-title">
-      <div class="workflow-heading"><h2 id="workflow-title" data-reveal>개발하던<br> 흐름 그대로.</h2><p data-reveal>터미널에서 계정을 연결하고 앱을 배포하세요.<br> 배포가 완료되면 공개 주소에서 앱을 확인합니다.</p><p class="secondary-note" data-reveal>오픈 베타 배포는 preview로 설치한 Spine CLI에서 이용할 수 있습니다.</p></div>
+      <div class="workflow-heading"><WorkflowIcon /><h2 id="workflow-title" data-reveal>개발하던<br> 흐름 그대로.</h2><p data-reveal>터미널에서 계정을 연결하고 앱을 배포하세요.<br> 배포가 완료되면 공개 주소에서 앱을 확인합니다.</p><p class="secondary-note" data-reveal>오픈 베타 배포는 preview로 설치한 Spine CLI에서 이용할 수 있습니다.</p></div>
       <div class="workflow-list">
         <div class="workflow-item" data-reveal><h3>preview CLI를 설치하고</h3><p>Go가 설치된 환경에서 실행하세요.</p><pre><code>go install github.com/NARUBROWN/spine-cli/cmd/spine@preview</code></pre></div>
         <div class="workflow-item" data-reveal><h3>계정을 연결하고</h3><p>브라우저에서 일회용 코드를 승인합니다.<br> 비밀번호를 CLI에 입력할 필요가 없습니다.</p><pre><code>spine cloud auth login</code></pre></div>
@@ -52,25 +56,20 @@ onUnmounted(() => observer?.disconnect())
     </section>
 
     <section id="features" class="features frame" aria-labelledby="features-title">
-      <div class="section-head"><h2 id="features-title" data-reveal>앱을 올린 다음까지.</h2><p data-reveal>Spine Cloud에서 만드는 배포와 관리 경험을 살펴보세요.<br> 아래 화면은 기능을 설명하기 위한 예시입니다.</p></div>
+      <div class="section-head"><div><FeaturesIcon /><h2 id="features-title" data-reveal>앱을 올린 다음까지.</h2></div><p data-reveal>Spine Cloud에서 만드는 배포와 관리 경험을 살펴보세요.<br> 대시보드에서 제공하는 기능을 예시 데이터로 살펴보세요.</p></div>
       <article class="feature-primary">
         <div class="feature-copy"><h3 data-reveal>앱 목록에서<br> 배포 결과까지 한곳에.</h3><p data-reveal>어떤 앱을 배포했는지, 결과는 어땠는지.<br> 앱의 배포 이력과 성공한 배포의<br> 공개 주소를 확인합니다.</p></div>
-        <div class="apps-fragment reveal-image" data-ui data-reveal>
-          <div class="fragment-heading"><span><BrandMark /> Spine Cloud</span><span>예시 화면</span></div>
-          <div class="app-summary"><div><p>내 앱</p><strong>cloud-example</strong></div><span class="status-label"><i></i>배포 완료</span></div>
-          <div class="app-address"><span>공개 주소</span><p>example.spinecloud.dev</p></div>
-          <div class="deploy-history"><span>배포 이력</span><div><span>cloud-example</span><span>완료</span></div><div><span>cloud-example</span><span>이전 배포</span></div></div>
-        </div>
+        <ProductDemo kind="dashboard" />
       </article>
       <div class="feature-secondary">
-        <article class="feature-auth"><div class="auth-fragment reveal-image" data-ui data-reveal><div class="fragment-heading"><span>CLI 계정 연결</span><span>예시</span></div><p>브라우저에서 코드 승인</p><div class="device-code" aria-label="설명용 승인 코드"><span>ABCD2345</span><span>EFGH6789</span></div><div class="auth-status"><span class="success-dot"></span>승인한 계정으로 연결</div></div><h3 data-reveal>계정은 브라우저로 연결.</h3><p data-reveal>일회용 코드를 승인해 CLI를 계정에 연결합니다.<br> 웹과 CLI의 로그인 세션은 별도로 발급됩니다.</p></article>
-        <article class="feature-secrets"><h3 data-reveal>설정은 코드와 따로.</h3><p data-reveal>앱에 필요한 환경 변수를 관리합니다.<br> 저장한 값은 다시 표시하지 않습니다.</p><div class="secrets-fragment reveal-image" data-ui data-reveal><div class="fragment-heading"><span>환경 변수</span><span>예시</span></div><div class="secret-row"><code>DATABASE_URL</code><span>값 숨김</span></div><div class="secret-row"><code>API_KEY</code><span>값 숨김</span></div><p>등록된 이름만 확인할 수 있습니다.</p></div></article>
+        <article class="feature-auth"><ProductDemo kind="cli" /><h3 data-reveal>계정은 브라우저로 연결.</h3><p data-reveal>일회용 코드를 승인해 CLI를 계정에 연결합니다.<br> 웹과 CLI의 로그인 세션은 별도로 발급됩니다.</p></article>
+        <article class="feature-secrets"><h3 data-reveal>설정은 코드와 따로.</h3><p data-reveal>앱에 필요한 환경 변수를 관리합니다.<br> 저장한 값은 다시 표시하지 않습니다.</p><ProductDemo kind="environment" /></article>
       </div>
     </section>
 
-    <section id="pilot" class="pilot-section" aria-labelledby="pilot-title"><div class="frame pilot-inner"><div><h2 id="pilot-title" data-reveal>어떻게 운영하는지<br> 문서로 공개합니다.</h2><a class="text-link" href="/technical/" data-reveal>기술 문서 보기</a></div><div class="pilot-details"><p data-reveal>아키텍처부터 보안과 복구까지,<br> 선택한 방식과 그 한계를 설명합니다.</p><p data-reveal>검증된 결과와 아직 확인이 필요한 항목을 구분해 기록합니다. 운영 구성이 바뀌면 문서도 함께 갱신합니다.</p><dl data-reveal><div><dt>아키텍처</dt><dd>구성 요소와 배포 흐름</dd></div><div><dt>신뢰와 보안</dt><dd>보호 범위와 남은 과제</dd></div></dl></div></div></section>
+    <section id="pilot" class="pilot-section" aria-labelledby="pilot-title"><div class="frame pilot-inner"><div><DocsIcon /><h2 id="pilot-title" data-reveal>어떻게 운영하는지<br> 문서로 공개합니다.</h2><a class="text-link" href="/technical/" data-reveal>기술 문서 보기</a></div><div class="pilot-details"><p data-reveal>아키텍처부터 보안과 복구까지,<br> 선택한 방식을 설명합니다.</p><p data-reveal>검증된 결과와 아직 확인이 필요한 항목을 구분해 기록합니다. 운영 구성이 바뀌면 문서도 함께 갱신합니다.</p><dl data-reveal><div><dt>아키텍처</dt><dd>구성 요소와 배포 흐름</dd></div><div><dt>신뢰와 보안</dt><dd>보호 범위</dd></div></dl></div></div></section>
 
     <section class="closing frame" aria-labelledby="closing-title"><div><h2 id="closing-title" data-reveal>다음 앱은 Spine으로.</h2><p data-reveal>프로젝트를 만들고 API를 작성하는 방법부터 살펴보세요.</p></div><a class="home-button" href="https://spine.na2ru2.me/ko/" data-reveal>Spine 문서 보기 <span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="site-footer frame"><a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a><div><a href="https://spine.na2ru2.me/ko/">Spine</a><a href="https://github.com/NARUBROWN/spine">GitHub</a><a href="/technical/">기술 문서</a><a href="/faq">FAQ</a><a href="/sitemap">사이트맵</a></div><span>© {{ new Date().getFullYear() }} Spine Cloud</span></footer>
+  <footer class="site-footer frame"><a class="brand" href="/" aria-label="Spine Cloud 홈"><BrandLogo /></a><div><a href="https://spine.na2ru2.me/ko/">Spine</a><a href="https://github.com/NARUBROWN/spine">GitHub</a><a href="/technical/">기술 문서</a><a href="/faq">FAQ</a><a href="/sitemap">사이트맵</a></div><span>© {{ new Date().getFullYear() }} Spine Cloud</span></footer>
 </template>

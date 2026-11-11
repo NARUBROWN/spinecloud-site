@@ -12,7 +12,7 @@ Recent application logs are collected. Old metrics are deleted when new measurem
 
 ## Resource policy
 
-Each app receives a baseline memory allocation. A booster provides up to twice that amount for 30 seconds. The app restarts if memory use stays above the baseline for 30 consecutive seconds.
+Each app receives a baseline memory allocation. A booster provides up to twice that amount for 1 minute. The app restarts if memory use stays above the baseline for 1 consecutive minute.
 
 ## Replacement and recovery
 

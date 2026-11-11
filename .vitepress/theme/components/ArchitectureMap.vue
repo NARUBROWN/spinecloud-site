@@ -10,7 +10,7 @@ const failed = ref(false)
 onMounted(async () => {
   try {
     const { default: mermaid } = await import('mermaid')
-    mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'neutral', flowchart: { useMaxWidth: true } })
+    mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'base', themeVariables: { darkMode: true, background: '#131217', primaryColor: '#1e1e21', primaryTextColor: '#f5f5f5', primaryBorderColor: '#45454a', lineColor: '#84b4ef', secondaryColor: '#171719', tertiaryColor: '#1e1e21', edgeLabelBackground: '#131217', fontFamily: 'Public Sans, system-ui, sans-serif' }, flowchart: { useMaxWidth: true } })
     const l = labels[lang.value] || labels.en
     const result = await mermaid.render('spine-cloud-architecture', `flowchart LR
       CLI["Spine CLI"] -->|"${l[0]}"| API["${l[2]}"]
@@ -35,7 +35,7 @@ Visitor → Portal relay → Tunnel → Application</pre>
   </figure>
 </template>
 <style scoped>
-.architecture-map { margin: 28px 0; padding: 20px; background: #f5f5f5; overflow-x: auto; border-radius: 8px; }
+.architecture-map { margin: 28px 0; padding: 20px; background: var(--paper); border: 1px solid var(--line); overflow-x: auto; border-radius: var(--radius); }
 .architecture-map :deep(svg) { min-width: 600px; height: auto; }
 .architecture-map pre { overflow-x: auto; }
 </style>

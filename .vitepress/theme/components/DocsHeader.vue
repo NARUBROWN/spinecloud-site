@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import BrandMark from './BrandMark.vue'
+import BrandLogo from './BrandLogo.vue'
 import messages from '../locales.json'
 
 const { page } = useData()
@@ -19,7 +19,7 @@ function changeLocale(event) {
 
 <template>
   <div class="docs-header"><header class="site-header frame">
-    <a class="brand" :href="base"><BrandMark /><span>spine<span class="brand-cloud">cloud</span></span></a>
+    <a class="brand" :href="base"><BrandLogo /></a>
     <nav :aria-label="labels.product"><a :href="`${base}#workflow`">{{ labels.product }}</a><a :href="`${base}technical/`">{{ labels.docs }}</a><a :href="`${base}faq`">{{ labels.faq }}</a></nav>
     <div class="header-controls"><a class="dashboard-link" href="https://spinecloud.dev/">{{ labels.dashboard }}</a><select class="locale-switch" :aria-label="languageLabel" :value="locale" @change="changeLocale"><option v-for="item in languages" :key="item.code" :value="item.code">{{ item.label }}</option></select></div>
   </header></div>
